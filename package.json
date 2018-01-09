@@ -1,0 +1,21 @@
+{
+  "name": "bs-svelte",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "svelte": "svelte compile --format iife svelte/Demo.html > svelte/Demo.js",
+    "start": "npm run build && npm run svelte && http-server . "
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^2.1.0",
+    "http-server": "^0.10.0",
+    "svelte-cli": "^2.1.0"
+  }
+}
